@@ -1,11 +1,12 @@
-#include<iostream>
-#include<cstdio>
+#include <iostream>
+#include <cstdio>
 using namespace std;
-int main (){
-	float a,b,c;
-	cin>>a>>b;
-	c=a/b;
-	cout<<c;
-	
+int main()
+{
+	float a, b, c;
+	cin >> a >> b;
+	c = a / b;
+	cout << c;
+
 	return 0;
 }
