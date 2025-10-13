@@ -1,0 +1,22 @@
+[
+    {
+        "caretX": 15,
+        "caretY": 10,
+        "filename": "D:/下载/RedPanda.C  .3.1.win64.MinGW64_11.4.Portable/RedPanda-CPP/projects/Project2/main.cpp",
+        "focused": false,
+        "isOpen": true,
+        "left": 0,
+        "order": 1,
+        "top": 0
+    },
+    {
+        "caretX": 2,
+        "caretY": 188,
+        "filename": "D:/下载/RedPanda.C  .3.1.win64.MinGW64_11.4.Portable/RedPanda-CPP/projects/Project2/account.h",
+        "focused": true,
+        "isOpen": true,
+        "left": 0,
+        "order": 0,
+        "top": 4450
+    }
+]

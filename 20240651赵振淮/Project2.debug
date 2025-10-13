@@ -1,0 +1,27 @@
+{
+    "breakpoints": [
+    ],
+    "timestamp": "1736163396201",
+    "watchvars": [
+        {
+            "expression": "answer",
+            "timestamp": "1735962506800"
+        },
+        {
+            "expression": "head",
+            "timestamp": "1735962570003"
+        },
+        {
+            "expression": "tail",
+            "timestamp": "1735963193253"
+        },
+        {
+            "expression": "p",
+            "timestamp": "1735992340975"
+        },
+        {
+            "expression": "count",
+            "timestamp": "1736036812408"
+        }
+    ]
+}
