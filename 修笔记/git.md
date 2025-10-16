@@ -1,17 +1,20 @@
- # 删除分支
-    
-- 已合并：`git branch -d `后接分支名 
-- 未合并：`git branch -D `
+# 此为git学习碧姬
 
-    
+## 删除分支
 
-# 解决冲突
- - 选择保留部分后，需重新**add** 和 **commit** 才可完成merge动作
-
-
-# 暂存区 git stash
- - 会将分支恢复到上一次提交
- - 查询: `stash list`
+- 已合并：`git branch -d`后接分支名
+- 未合并：`git branch -D`
   
-# “ctrl+z” 撤销修改 git restore
- - 后接文件名，使目标文件完全回到上一个提交状态
+## 解决冲突
+
+- 选择保留部分后，需重新**add** 和 **commit** 才可完成merge动作
+
+## 暂存区 git stash
+
+- 会将分支恢复到上一次提交
+- 查询: `stash list`
+  
+## “ctrl+z” 撤销修改 git restore
+
+- 后接文件名，使目标文件完全回到上一个提交状态
+  
