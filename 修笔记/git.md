@@ -18,3 +18,7 @@
 
 - 后接文件名，使目标文件完全回到上一个提交状态
   
+## 修改提交**git commit --amend**
+
+- 修改上次提交的备注`git commit --amend -m ""`
+- 在上次提交中添加文件`git commit --amend --no-edit`（需要先add补交的文件）
