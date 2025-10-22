@@ -22,5 +22,6 @@ endmodule
 
 ## 一些常用翻译
 
+仿真：`simulation`
 综合：`synthesis`
-仿真：`implementation`
+实现：`implementation`

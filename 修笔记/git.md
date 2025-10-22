@@ -11,7 +11,7 @@
 
 ## 暂存区 git stash
 
-- 会将分支恢复到上一次提交
+- 会将工作内容恢复到上一次提交的状态
 - 查询: `stash list`
   
 ## “ctrl+z” 撤销修改 git restore
@@ -22,3 +22,8 @@
 
 - 修改上次提交的备注`git commit --amend -m ""`
 - 在上次提交中添加文件`git commit --amend --no-edit`（需要先add补交的文件）
+
+## 修改分支的根基**git rebase**
+
+- 可以将当前分支的支点移到目标位置(后面接要移到的位置)
+  
