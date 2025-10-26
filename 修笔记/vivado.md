@@ -1,5 +1,17 @@
 # 第一章：沟槽德数字逻辑实验，集贸不交全靠自学。组员还图省事不下功夫只能组长发力之悲惨大学生活
 
+## B3 板卡型号为
+
+``` bash
+xc7a35tcpg236-1 
+```
+
+## 一些常用翻译
+
+仿真：`simulation`
+综合：`synthesis`
+实现：`implementation`
+
 ## 仿真文件语法**simulater**
 
 ``` verilog
@@ -20,8 +32,14 @@ end
 endmodule
 ```
 
-## 一些常用翻译
+## 约束引脚注意事项
 
-仿真：`simulation`
-综合：`synthesis`
-实现：`implementation`
+- 七段数码管链接顺序从上到下对应a到g
+
+``` bash
+w7,w6,u8,v8,u5,v5,u7,v7
+```
+
+- 选择信号从第一个到第四个分别对应 ` w4,v4,u4,u2 `
+
+- clk接w5
