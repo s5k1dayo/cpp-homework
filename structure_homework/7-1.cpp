@@ -38,14 +38,14 @@ int main()
     }
     else if (n < m)
     {
-        for (int i = n-m % n; i < n; i++)
+        for (int i = n - m % n; i < n; i++)
         {
             cout << A[i] << " ";
         }
-        for (int i = 0; i < n-m % n; i++)
+        for (int i = 0; i < n - m % n; i++)
         {
             cout << A[i];
-            if (i != n-m % n - 1)
+            if (i != n - m % n - 1)
             {
                 cout << " ";
             }

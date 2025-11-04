@@ -45,7 +45,7 @@ int main()
     int n, m, count = 0;
     cin >> n >> m;
     int shu = m * 1.5 / 1;
-    int hao[n], fen[n],chuhao[n],chufen[n];
+    int hao[n], fen[n], chuhao[n], chufen[n];
     for (int i = 0; i < n; i++)
     {
         cin >> hao[i] >> fen[i];
@@ -56,8 +56,8 @@ int main()
     {
         if (fen[j] != fen[j + 1])
         {
-            chuhao[count]=hao[j];
-            chufen[count]=fen[j];
+            chuhao[count] = hao[j];
+            chufen[count] = fen[j];
             j++;
             count++;
         }
@@ -73,14 +73,15 @@ int main()
             paixu(hao, fen, count, count + tong, 1);
             for (int k = 0; k < tong; k++)
             {
-                chuhao[count+k]=hao[count+k];
-                chufen[count+k]=fen[count+k];
+                chuhao[count + k] = hao[count + k];
+                chufen[count + k] = fen[count + k];
             }
             count += tong;
         }
     }
-    cout<<chufen[count-1]<<" "<<count<<endl;
-    for(int h=0;h<count;h++){
-        cout<<chuhao[h]<<" "<<chufen[h]<<endl;
+    cout << chufen[count - 1] << " " << count << endl;
+    for (int h = 0; h < count; h++)
+    {
+        cout << chuhao[h] << " " << chufen[h] << endl;
     }
 }
