@@ -43,3 +43,35 @@ long long fast_pow(long long a,long long b){
 1
 586315999
 */
+#include<iostream>
+#include<cmath>
+using namespace std;
+long long fast_pow(long long a,long long b){
+    a%=998244353;
+    long long res=1;
+    while (b){
+        if (b&1) res=res*a%998244353;
+        a=a*a%998244353;
+        b>>=1;
+    }
+    return res;
+}
+long long gong(long long a,long long b){
+    while(a%b!=0){
+        long long c=b;
+        b=a%b;
+        a=c;
+    }
+    return b;
+}
+int main(){
+    int T;
+    cin>>T;
+    for(int i=0;i<T;i++){
+        long long a,b,c,d,qian,hou;
+        cin>>a>>b>>c>>d;
+        qian=fast_pow(a,b);
+        hou=fast_pow(c,d);
+        cout<<gong(qian,hou)<<endl;
+    }
+}
