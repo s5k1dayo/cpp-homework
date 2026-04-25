@@ -1,0 +1,53 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+int merge(vector<int>& nums, int left,int mid,int right,vector<int>& temp){
+    int i=left,j=mid+1,k=left;
+    int count=0;
+    while(i<=mid && j<=right){
+        if(nums[i]<=nums[j]){
+            temp[k++]=nums[i++];
+        }
+        else{
+            temp[k++]=nums[j++];
+            count+=(mid-i+1);
+        }
+    }
+    while(i<=mid){
+        temp[k++] = nums[i++];
+    }
+    while(j<=right){
+        temp[k++]=nums[j++];
+    }
+    for(i=left;i<=right;++i){
+        nums[i]=temp[i];
+    }
+    return count;
+}
+int mergeSort(vector<int>& nums,int left,int right,vector<int>&temp){
+    int count=0;
+    if(left<right){
+        int mid = left + (right-left)/2;
+        count+=mergeSort(nums,left,mid,temp);
+        count+=mergeSort(nums,mid+1,right,temp);
+        count+=merge(nums,left,mid,right,temp);
+    }
+    return count;
+}
+int Count(vector<int>& nums){
+    int n=nums.size();
+    if(n<=1){
+        return 0;
+    }
+    vector<int> temp(n);
+    return mergeSort(nums,0,n-1,temp);
+}
+int main(){
+    int n;
+    cin>>n;
+    vector<int> a;
+    for(int i=0;i<n;i++){
+        cin>>a[i];
+    }
+    cout<<Count(a);
+}
